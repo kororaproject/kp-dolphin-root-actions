@@ -1,5 +1,5 @@
 Name:           dolphin-root-actions
-Version:        2.7.3
+Version:        2.8.1
 Release:        1%{?dist}
 Summary:        Adds delete, copy, open actions in Dolphin to perform as root.
 
@@ -34,6 +34,9 @@ rm -rf %{buildroot}
 %{_bindir}/rootactions-servicemenu.pl
 
 %changelog
+* Wed Mar 26 2014 Chris Smart <csmart@kororaproject.org> - 2.8.1
+- Upgrade to 2.8.1 release.
+
 * Mon May 21 2012 Chris Smart <chris@kororaa.org> - 2.7.3
 - Upgrade to 2.7.3 release.
 
