@@ -1,12 +1,12 @@
 Name:           dolphin-root-actions
-Version:        2.9
-Release:        2%{?dist}
+Version:        2.9.1
+Release:        1%{?dist}
 Summary:        Adds delete, copy, open actions in Dolphin to perform as root.
 
 Group:          Applications/Internet
 License:        GPL 2.0
 URL:            http://kde-apps.org/content/show.php/Root+Actions+Servicemenu?content=48411
-Source0:        http://kde-apps.org/CONTENT/content-files/48411-rootactions_servicemenu_%{version}.tar.gz
+Source0:        https://dl.opendesktop.org/api/files/download/id/1485341541/rootactions_servicemenu_%{version}.tar.gz
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch:      noarch
@@ -34,6 +34,9 @@ rm -rf %{buildroot}
 %{_bindir}/rootactions-servicemenu.pl
 
 %changelog
+* Wed Apr 26 2017 Ian Firns <firnsy@kororaproject.org> - 2.9.1-1
+- Upgrade to 2.9.1 release.
+
 * Thu May 12 2016 Chris Smart <csmart@kororaproject.org> - 2.9-2
 - Fix for Plasma 5
 
